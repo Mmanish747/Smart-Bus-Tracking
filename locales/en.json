@@ -1,0 +1,154 @@
+{
+  "nav": {
+    "home": "Home",
+    "track_bus": "Track Bus",
+    "routes": "Routes",
+    "schedule": "Schedule",
+    "notifications": "Notifications",
+    "about": "About Us",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout"
+  },
+  "hero": {
+    "title1": "Smart Tracking.",
+    "title2": "Smarter Travel.",
+    "subtitle": "Real-time bus tracking for a smarter commute. Know your bus. Plan your time. Reach on time.",
+    "track_btn": "Track Your Bus",
+    "routes_btn": "View Routes",
+    "live_updates": "Live Updates",
+    "accurate_tracking": "Accurate Tracking",
+    "better_commute": "Better Commute",
+    "live_bus": "Live Bus",
+    "next_stop": "Next Stop",
+    "away": "away"
+  },
+  "features": {
+    "live_tracking": {
+      "title": "Live Tracking",
+      "description": "Track buses in real-time on the map."
+    },
+    "route_information": {
+      "title": "Route Information",
+      "description": "View available routes and stops instantly."
+    },
+    "bus_schedule": {
+      "title": "Bus Schedule",
+      "description": "Check arrival and departure times easily."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "Receive delay and arrival alerts in real time."
+    },
+    "safe_reliable": {
+      "title": "Safe & Reliable",
+      "description": "Travel with confidence using accurate tracking."
+    }
+  },
+  "tracking": {
+    "title": "Track Your Bus Live",
+    "subtitle": "Select a route to display its path and live bus location.",
+    "search_placeholder": "Enter bus number or stop name...",
+    "popular_routes": "Popular Routes",
+    "on_time": "On Time",
+    "eta": "ETA",
+    "speed": "Speed",
+    "next_stop": "Next Stop",
+    "no_routes": "No routes found",
+    "view_all_routes": "View All Routes"
+  },
+  "stats": {
+    "active_buses": "Active Buses",
+    "routes": "Routes",
+    "live_tracking": "Live Tracking",
+    "on_time_performance": "On-time Performance"
+  },
+  "why_choose": {
+    "title": "Why Choose Smart Bus Tracking?",
+    "save_time": {
+      "title": "Save Time",
+      "description": "Plan your journey better and reduce waiting time."
+    },
+    "travel_smart": {
+      "title": "Travel Smart",
+      "description": "Get real-time updates and make smarter travel decisions."
+    },
+    "eco_friendly": {
+      "title": "Eco Friendly",
+      "description": "Encourages public transport and reduces carbon footprint."
+    },
+    "secure_reliable": {
+      "title": "Secure & Reliable",
+      "description": "Accurate data, secure system and reliable service you can trust."
+    }
+  },
+  "footer": {
+    "quick_links": "Quick Links",
+    "contact_us": "Contact Us",
+    "newsletter": "Newsletter",
+    "subscribe": "Subscribe to get the latest updates and news.",
+    "email_placeholder": "Enter your email",
+    "subscribe_button": "Subscribe",
+    "created_by": "Created By",
+    "team_name": "Team Blaze"
+  },
+  "auth": {
+    "login_title": "Login to your account",
+    "signup_title": "Create an account",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "forgot_password": "Forgot Password?"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "tracking": "Tracking",
+    "buses": "Buses",
+    "drivers": "Drivers",
+    "routes": "Routes",
+    "schedules": "Schedules",
+    "notifications": "Notifications",
+    "users": "Users",
+    "team": "Team",
+    "settings": "Settings",
+    "search": "Search buses, routes, users..."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "schedule_header": {
+    "select_date": "Select Date",
+    "select_route": "Select Route",
+    "all_routes": "All Routes",
+    "select_direction": "Select Direction",
+    "all_directions": "All Directions",
+    "outbound": "Outbound",
+    "inbound": "Inbound"
+  },
+  "schedule_page": {
+    "bus_schedules": "Bus Schedules",
+    "loading": "Loading schedules...",
+    "empty": "No schedules available.",
+    "view_more": "View More Schedules"
+  },
+  "notifications": {
+    "categories": {
+      "all": "All",
+      "alerts": "Alerts",
+      "service_updates": "Service Updates",
+      "promotions": "Promotions",
+      "general": "General"
+    },
+    "mark_all_read": "Mark all as read",
+    "marking": "Marking...",
+    "mark_as_read": "Mark as read",
+    "loading": "Loading notifications...",
+    "empty": "No notifications.",
+    "load_more": "Load More"
+  }
+}

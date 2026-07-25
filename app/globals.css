@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+:root {
+  /* Core surfaces */
+  --background: #f5f8f6;
+  --foreground: #10201a;
+  --card: #ffffff;
+  --card-foreground: #10201a;
+  --muted: #eef3f0;
+  --muted-foreground: #5b7166;
+  --border: #e2ebe5;
+  --input: #e2ebe5;
+
+  /* Brand — SmartBus deep green */
+  --primary: #14804a;
+  --primary-foreground: #ffffff;
+  --primary-strong: #0d5c35;
+
+  /* Signature accent — live/mint */
+  --accent: #2fd889;
+  --accent-foreground: #04150c;
+  --accent-soft: #e4faef;
+
+  --ring: #14804a;
+
+  /* Sidebar is always the dark SmartBus forest, in both themes */
+  --sidebar: #0b1712;
+  --sidebar-foreground: #dcece3;
+  --sidebar-muted: #7f9a8c;
+  --sidebar-border: #16261e;
+  --sidebar-active: #123723;
+
+  --success: #22c55e;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --info: #2563eb;
+
+  --radius: 1rem;
+}
+
+.dark {
+  --background: #070d0a;
+  --foreground: #e7f3ec;
+  --card: #0f1913;
+  --card-foreground: #e7f3ec;
+  --muted: #131f19;
+  --muted-foreground: #86a396;
+  --border: #1c2b23;
+  --input: #1c2b23;
+
+  --primary: #22c55e;
+  --primary-foreground: #04150c;
+  --primary-strong: #16a34a;
+
+  --accent: #34e39c;
+  --accent-foreground: #04150c;
+  --accent-soft: #0f2a1d;
+
+  --ring: #22c55e;
+
+  --sidebar: #060b08;
+  --sidebar-foreground: #dcece3;
+  --sidebar-muted: #6e8a7c;
+  --sidebar-border: #131f19;
+  --sidebar-active: #10281b;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-strong: var(--primary-strong);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-soft: var(--accent-soft);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-muted: var(--sidebar-muted);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-active: var(--sidebar-active);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-info: var(--info);
+
+  --font-sans: var(--font-hanken);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  border-color: var(--border);
+}
+
+/* Thin, unobtrusive scrollbars for panels/logs */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+/* Signature motif: a faint dashed route-line used as a corner/edge accent on cards */
+.route-stitch {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--accent) 0px,
+    var(--accent) 6px,
+    transparent 6px,
+    transparent 14px
+  );
+  opacity: 0.55;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 55%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 0%, transparent);
+  }
+}
+.live-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes log-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.log-enter {
+  animation: log-in 0.35s ease-out;
+}
+
+/* Fix Leaflet map overlapping background and UI elements */
+.leaflet-container {
+  z-index: 0 !important;
+}
