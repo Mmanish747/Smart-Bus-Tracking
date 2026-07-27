@@ -218,7 +218,7 @@ export default function RouteMapPicker({ value, onChange }: RouteMapPickerProps)
 
           <ClickHandler onPendingPoint={handlePendingPoint} />
 
-          {/* Confirmed route polyline */}
+          {/* Confirmed route polyline, usae of the polyline */}
           {polylinePositions.length > 1 && (
             <Polyline
               positions={polylinePositions}

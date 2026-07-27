@@ -11,7 +11,7 @@ import {
   Polyline,
   TileLayer,
   useMap,
-} from "react-leaflet";
+} from "react-leaflet"; // Importing polyline for route mapping
 import { useEffect, useMemo, useRef, useState } from "react";
 import { fetchRoadRoute } from "@/utils/routing";
 import { initLeafletIcons } from "@/utils/leaflet";
@@ -256,7 +256,7 @@ const MapView = ({
   }, []);
 
   // ==========================
-  // Road Route via OSRM
+  // Road Route via OSRM uses polyline mapping to show the green route in the map
   // ==========================
   useEffect(() => {
     if (routeCoordinates.length < 2) {
@@ -313,7 +313,7 @@ const MapView = ({
         {showBus && busPosition ? (
           <CenterOnBus center={busPosition} />
         ) : routePolyline.length >= 2 ? (
-          <FitBounds positions={routePolyline} />
+          <FitBounds positions={routePolyline} /> // Fitting the boundary points using the poly line algorith
         ) : null}
 
         <ZoomControls deviceLocation={deviceLocation} />

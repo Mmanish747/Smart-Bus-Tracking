@@ -6,6 +6,7 @@ import type { RouteData } from "@/utils/api";
 
 type SearchProps = {
   searchTitle?: string;
+  searchPlaceholder?: string;
   tileFirst?: string;
   firstOption?: string;
   titleSecond?: string;
@@ -17,7 +18,8 @@ type SearchProps = {
 };
 
 const BusSearchHeader = ({
-  searchTitle = "Search Bus / Stop",
+  searchTitle = "Search  Routes/Stop",
+  searchPlaceholder = "Enter stop or Route name",
   tileFirst = "Select Route",
   firstOption = "All Routes",
   titleSecond = "Direction",
@@ -84,7 +86,7 @@ const BusSearchHeader = ({
               type="text"
               value={searchValue}
               onChange={(e) => handleSearchChange(e.target.value)}
-              placeholder="Enter bus number or stop name"
+              placeholder={searchPlaceholder}
               className="w-full rounded-lg border border-gray-200 py-2.5 pl-4 pr-10 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary"
             />
             <Search className="absolute right-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />

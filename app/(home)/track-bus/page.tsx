@@ -14,7 +14,7 @@ export default function Page() {
   const { routes, loadingRoutes, trackingByRouteId } = useLiveTracking();
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedRouteFilter, setSelectedRouteFilter] = useState("All Routes");
+  const [selectedRouteFilter, setSelectedRouteFilter] = useState("All Buses");
   const [showFullScreen, setShowFullScreen] = useState(false);
 
   const activeRoute = routes[selectedIndex];
@@ -54,7 +54,7 @@ export default function Page() {
 
   const handleRouteFilter = (route: string) => {
     setSelectedRouteFilter(route);
-    if (route !== "All Routes") {
+    if (route !== "All Buses") {
       const idx = routes.findIndex(
         (r) => r.routeNo === route || `${r.from} → ${r.to}` === route
       );
